@@ -4,10 +4,10 @@ require('dotenv').config()
 const db=mongoose
   .connect(process.env.DATA_BASE)
   .then(() => {
-    console.log("CONNECTED"); // "Success!"
+    console.log("Database connected"); 
   })
   .catch(() => {
-    console.error("NOT CONNECTED");
+    console.error("Database Not connected");
   });
 
   module.exports=db
