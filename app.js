@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 3000;
 app.use(router)
 app.get('/',(req,res)=>{
-     res.status(200).send("App is ruuning");
+     res.status(200).send("Please visit on https://api-for-school-managment.vercel.app/listSchools?latitude=26.764177&longitude=83.076775");
 })
 app.listen(port, () => {
 
