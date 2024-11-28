@@ -1,5 +1,5 @@
 const express = require("express");
-const { addSchool, listSchool } = require("../controllers/school");
+const { addSchool, listSchool } = require("../controllers/school.js");
 const router = express.Router();
 
 router.route("/addSchool").post(addSchool);
